@@ -40,7 +40,7 @@ jobs:
       - name: Build and test with Maven
         run: bash ./mvnw -B verify
         env:
-          SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/db_usuario
-          SPRING_DATASOURCE_USERNAME: postgres
-          SPRING_DATASOURCE_PASSWORD: ci_test_password_only
+          DB_URL: jdbc:postgresql://localhost:5432/db_usuario
+          DB_USERNAME: postgres
+          DB_PASSWORD: ci_test_password_only
           JWT_SECRET: MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWY=
